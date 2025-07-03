@@ -1003,7 +1003,7 @@ def get_default_settings() -> Settings:
         stt_silence_threshold=0.3,
         stt_silence_duration=1000,
         stt_waiting_timeout=2000,
-        mcp_servers='{\n    "mcpServers": {}\n}',
+        mcp_servers='{\n    "mcpServers": {\n        "hf-mcp": {\n            "description": "HuggingFace MCP tools",\n            "url": "https://huggingface.co/mcp",\n            "headers": {"Authorization": "Bearer <HF_TOKEN>"},\n            "init_timeout": 10,\n            "tool_timeout": 200\n        }\n    }\n}',
         mcp_client_init_timeout=5,
         mcp_client_tool_timeout=120,
         mcp_server_enabled=False,

@@ -223,6 +223,7 @@ The `prompts` directory contains various Markdown files that control agent behav
 2. Copy and modify needed files from `prompts/default/`
 3. Agent Zero will merge your custom files with the default ones
 4. Select your custom prompts in the Settings page (Agent Config section)
+5. Example profiles included in the repository are `vibecoding`, `videomaker` and `nsfw` which showcase specialized prompt sets
 
 #### Dynamic Behavior System
 - **Behavior Adjustment**: 

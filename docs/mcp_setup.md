@@ -104,6 +104,23 @@ Here are templates for configuring individual servers within the `mcp_servers` J
 }
 ```
 
+### Example: Hugging Face MCP Server
+
+To leverage the public MCP tools hosted on Hugging Face, add a server configuration similar to the following:
+
+```json
+{
+  "name": "hf-mcp",
+  "description": "HuggingFace MCP tools",
+  "url": "https://huggingface.co/mcp",
+  "headers": { "Authorization": "Bearer <HF_TOKEN>" },
+  "init_timeout": 10,
+  "tool_timeout": 200
+}
+```
+
+Ensure your `<HF_TOKEN>` environment variable contains a valid Hugging Face access token.
+
 **Key Configuration Fields:**
 
 *   `"name"`: A unique name for the server. This name will be used to prefix the tools provided by this server (e.g., `my_server_name.tool_name`). The name is normalized internally (converted to lowercase, spaces and hyphens replaced with underscores).

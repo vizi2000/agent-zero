@@ -118,6 +118,12 @@ docker run -p 50001:80 frdel/agent-zero-run
 # Visit http://localhost:50001 to start
 ```
 
+If you want to use the public HuggingFace MCP tools, set the `HF_TOKEN` environment variable and run:
+
+```bash
+python scripts/setup_hf_mcp.py
+```
+
 ## 🐳 Fully Dockerized, with Speech-to-Text and TTS
 
 ![Settings](docs/res/settings-page-ui.png)
